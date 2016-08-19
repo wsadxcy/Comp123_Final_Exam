@@ -4,6 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/* Author : Tom Tsiliopoulos, Chenyuan Xie
+ * Date : Aug 19, 2016
+ * Date Modified: Aug 19, 2016
+ * Description : Final Exam
+ * Version : 0.1 - 
+ *                  Added Documentary
+ */
+
 namespace COMP123_S2016_FinalExam_300709228
 {
     public static class Program
@@ -19,11 +27,9 @@ namespace COMP123_S2016_FinalExam_300709228
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AbilityGeneratorForm());
+            Application.Run(new SplashScreen());
 
-            GenerateNameForm GenerateNameForm = new GenerateNameForm();
-            SplashScreen SplashScreen = new SplashScreen();
-            
+
 
         }
     }

@@ -12,7 +12,7 @@ namespace COMP123_S2016_FinalExam_300709228
 {
     public partial class SplashScreen : Form
     {
-        GenerateNameForm generateNameForm = new GenerateNameForm();
+        
         
 
         public SplashScreen()
@@ -27,8 +27,13 @@ namespace COMP123_S2016_FinalExam_300709228
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            this.Hide();
-            generateNameForm.Show();
+            if (timer1.Enabled)
+            {
+                this.Hide();
+                GenerateNameForm generateNameForm = new GenerateNameForm();
+                generateNameForm.Show();
+            }
+            
 
 
         }

@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.NameListGroupBox = new System.Windows.Forms.GroupBox();
-            this.FirstNameListBox = new System.Windows.Forms.ListBox();
-            this.FirstNameLabel = new System.Windows.Forms.Label();
-            this.LastNameLabel = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.NextButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.FirstNameLabel2 = new System.Windows.Forms.Label();
+            this.GenerateButton = new System.Windows.Forms.Button();
             this.LastNameLabel2 = new System.Windows.Forms.Label();
             this.LastNameTextBox = new System.Windows.Forms.TextBox();
-            this.GenerateButton = new System.Windows.Forms.Button();
+            this.FirstNameLabel2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.LastNameLabel = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.FirstNameLabel = new System.Windows.Forms.Label();
+            this.FirstNameListBox = new System.Windows.Forms.ListBox();
+            this.NextButton = new System.Windows.Forms.Button();
             this.NameListGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,97 +53,70 @@
             this.NameListGroupBox.Controls.Add(this.listBox1);
             this.NameListGroupBox.Controls.Add(this.FirstNameLabel);
             this.NameListGroupBox.Controls.Add(this.FirstNameListBox);
-            this.NameListGroupBox.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameListGroupBox.Location = new System.Drawing.Point(64, 12);
+            this.NameListGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameListGroupBox.Location = new System.Drawing.Point(64, 11);
             this.NameListGroupBox.Name = "NameListGroupBox";
-            this.NameListGroupBox.Size = new System.Drawing.Size(372, 334);
+            this.NameListGroupBox.Size = new System.Drawing.Size(372, 308);
             this.NameListGroupBox.TabIndex = 0;
             this.NameListGroupBox.TabStop = false;
             this.NameListGroupBox.Text = "Name Lists";
             // 
-            // FirstNameListBox
+            // GenerateButton
             // 
-            this.FirstNameListBox.FormattingEnabled = true;
-            this.FirstNameListBox.ItemHeight = 18;
-            this.FirstNameListBox.Items.AddRange(new object[] {
-            "Anthony",
-            "Barbara",
-            "Betty",
-            "Brian",
-            "Carol",
-            "Charles",
-            "Christopher",
-            "Daniel",
-            "David",
-            "Deborah",
-            "Donald",
-            "Donna",
-            "Dorothy",
-            "Edward",
-            "Elizabeth",
-            "George",
-            "Helen",
-            "James",
-            "Jason",
-            "Jeff",
-            "Jennifer",
-            "John",
-            "Joseph",
-            "Karen",
-            "Kenneth",
-            "Kevin",
-            "Kimberly",
-            "Laura",
-            "Linda",
-            "Lisa",
-            "Margaret",
-            "Maria",
-            "Mark",
-            "Mary",
-            "Michael",
-            "Michelle",
-            "Nancy",
-            "Patricia",
-            "Paul",
-            "Richard",
-            "Robert",
-            "Ronald",
-            "Ruth",
-            "Sandra\t ",
-            "Sarah",
-            "Sharon",
-            "Steven",
-            "Susan",
-            "Thomas",
-            "William"});
-            this.FirstNameListBox.Location = new System.Drawing.Point(7, 51);
-            this.FirstNameListBox.Name = "FirstNameListBox";
-            this.FirstNameListBox.Size = new System.Drawing.Size(152, 94);
-            this.FirstNameListBox.Sorted = true;
-            this.FirstNameListBox.TabIndex = 0;
+            this.GenerateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GenerateButton.Location = new System.Drawing.Point(166, 241);
+            this.GenerateButton.Name = "GenerateButton";
+            this.GenerateButton.Size = new System.Drawing.Size(170, 37);
+            this.GenerateButton.TabIndex = 8;
+            this.GenerateButton.Text = "Generate Names";
+            this.GenerateButton.UseVisualStyleBackColor = true;
+            this.GenerateButton.Click += new System.EventHandler(this.GenerateButton_Click);
             // 
-            // FirstNameLabel
+            // LastNameLabel2
             // 
-            this.FirstNameLabel.AutoSize = true;
-            this.FirstNameLabel.Location = new System.Drawing.Point(7, 32);
-            this.FirstNameLabel.Name = "FirstNameLabel";
-            this.FirstNameLabel.Size = new System.Drawing.Size(97, 18);
-            this.FirstNameLabel.TabIndex = 1;
-            this.FirstNameLabel.Text = "First Names";
+            this.LastNameLabel2.AutoSize = true;
+            this.LastNameLabel2.Location = new System.Drawing.Point(184, 163);
+            this.LastNameLabel2.Name = "LastNameLabel2";
+            this.LastNameLabel2.Size = new System.Drawing.Size(86, 20);
+            this.LastNameLabel2.TabIndex = 7;
+            this.LastNameLabel2.Text = "Last Name";
+            // 
+            // LastNameTextBox
+            // 
+            this.LastNameTextBox.Location = new System.Drawing.Point(184, 183);
+            this.LastNameTextBox.Name = "LastNameTextBox";
+            this.LastNameTextBox.Size = new System.Drawing.Size(152, 26);
+            this.LastNameTextBox.TabIndex = 6;
+            // 
+            // FirstNameLabel2
+            // 
+            this.FirstNameLabel2.AutoSize = true;
+            this.FirstNameLabel2.Location = new System.Drawing.Point(7, 163);
+            this.FirstNameLabel2.Name = "FirstNameLabel2";
+            this.FirstNameLabel2.Size = new System.Drawing.Size(86, 20);
+            this.FirstNameLabel2.TabIndex = 5;
+            this.FirstNameLabel2.Text = "First Name";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(7, 183);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(152, 26);
+            this.textBox1.TabIndex = 4;
             // 
             // LastNameLabel
             // 
             this.LastNameLabel.AutoSize = true;
-            this.LastNameLabel.Location = new System.Drawing.Point(185, 32);
+            this.LastNameLabel.Location = new System.Drawing.Point(185, 30);
             this.LastNameLabel.Name = "LastNameLabel";
-            this.LastNameLabel.Size = new System.Drawing.Size(96, 18);
+            this.LastNameLabel.Size = new System.Drawing.Size(94, 20);
             this.LastNameLabel.TabIndex = 3;
             this.LastNameLabel.Text = "Last Names";
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 18;
+            this.listBox1.ItemHeight = 20;
             this.listBox1.Items.AddRange(new object[] {
             "Adams",
             "Allen",
@@ -195,70 +168,99 @@
             "Wilson",
             "Wright",
             "Young"});
-            this.listBox1.Location = new System.Drawing.Point(184, 51);
+            this.listBox1.Location = new System.Drawing.Point(184, 47);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(152, 94);
+            this.listBox1.Size = new System.Drawing.Size(152, 84);
             this.listBox1.Sorted = true;
             this.listBox1.TabIndex = 2;
             // 
+            // FirstNameLabel
+            // 
+            this.FirstNameLabel.AutoSize = true;
+            this.FirstNameLabel.Location = new System.Drawing.Point(7, 30);
+            this.FirstNameLabel.Name = "FirstNameLabel";
+            this.FirstNameLabel.Size = new System.Drawing.Size(94, 20);
+            this.FirstNameLabel.TabIndex = 1;
+            this.FirstNameLabel.Text = "First Names";
+            // 
+            // FirstNameListBox
+            // 
+            this.FirstNameListBox.FormattingEnabled = true;
+            this.FirstNameListBox.ItemHeight = 20;
+            this.FirstNameListBox.Items.AddRange(new object[] {
+            "Anthony",
+            "Barbara",
+            "Betty",
+            "Brian",
+            "Carol",
+            "Charles",
+            "Christopher",
+            "Daniel",
+            "David",
+            "Deborah",
+            "Donald",
+            "Donna",
+            "Dorothy",
+            "Edward",
+            "Elizabeth",
+            "George",
+            "Helen",
+            "James",
+            "Jason",
+            "Jeff",
+            "Jennifer",
+            "John",
+            "Joseph",
+            "Karen",
+            "Kenneth",
+            "Kevin",
+            "Kimberly",
+            "Laura",
+            "Linda",
+            "Lisa",
+            "Margaret",
+            "Maria",
+            "Mark",
+            "Mary",
+            "Michael",
+            "Michelle",
+            "Nancy",
+            "Patricia",
+            "Paul",
+            "Richard",
+            "Robert",
+            "Ronald",
+            "Ruth",
+            "Sandra\t ",
+            "Sarah",
+            "Sharon",
+            "Steven",
+            "Susan",
+            "Thomas",
+            "William"});
+            this.FirstNameListBox.Location = new System.Drawing.Point(7, 47);
+            this.FirstNameListBox.Name = "FirstNameListBox";
+            this.FirstNameListBox.Size = new System.Drawing.Size(152, 84);
+            this.FirstNameListBox.Sorted = true;
+            this.FirstNameListBox.TabIndex = 0;
+            // 
             // NextButton
             // 
-            this.NextButton.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextButton.Location = new System.Drawing.Point(379, 429);
+            this.NextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextButton.Location = new System.Drawing.Point(379, 396);
             this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(113, 40);
+            this.NextButton.Size = new System.Drawing.Size(113, 37);
             this.NextButton.TabIndex = 7;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(7, 198);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 26);
-            this.textBox1.TabIndex = 4;
-            // 
-            // FirstNameLabel2
-            // 
-            this.FirstNameLabel2.AutoSize = true;
-            this.FirstNameLabel2.Location = new System.Drawing.Point(7, 177);
-            this.FirstNameLabel2.Name = "FirstNameLabel2";
-            this.FirstNameLabel2.Size = new System.Drawing.Size(89, 18);
-            this.FirstNameLabel2.TabIndex = 5;
-            this.FirstNameLabel2.Text = "First Name";
-            // 
-            // LastNameLabel2
-            // 
-            this.LastNameLabel2.AutoSize = true;
-            this.LastNameLabel2.Location = new System.Drawing.Point(184, 177);
-            this.LastNameLabel2.Name = "LastNameLabel2";
-            this.LastNameLabel2.Size = new System.Drawing.Size(88, 18);
-            this.LastNameLabel2.TabIndex = 7;
-            this.LastNameLabel2.Text = "Last Name";
-            // 
-            // LastNameTextBox
-            // 
-            this.LastNameTextBox.Location = new System.Drawing.Point(184, 198);
-            this.LastNameTextBox.Name = "LastNameTextBox";
-            this.LastNameTextBox.Size = new System.Drawing.Size(152, 26);
-            this.LastNameTextBox.TabIndex = 6;
-            // 
-            // GenerateButton
-            // 
-            this.GenerateButton.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GenerateButton.Location = new System.Drawing.Point(166, 261);
-            this.GenerateButton.Name = "GenerateButton";
-            this.GenerateButton.Size = new System.Drawing.Size(170, 40);
-            this.GenerateButton.TabIndex = 8;
-            this.GenerateButton.Text = "Generate Names";
-            this.GenerateButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // GenerateNameForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(504, 481);
+            this.ClientSize = new System.Drawing.Size(504, 444);
             this.ControlBox = false;
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.NameListGroupBox);
@@ -266,6 +268,7 @@
             this.Name = "GenerateNameForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Generate Name";
+            this.Load += new System.EventHandler(this.GenerateNameForm_Load);
             this.NameListGroupBox.ResumeLayout(false);
             this.NameListGroupBox.PerformLayout();
             this.ResumeLayout(false);

@@ -21,7 +21,24 @@ namespace COMP123_S2016_FinalExam_300709228
 
         private void GenerateName()
         {
+            
+        }
 
+        private void GenerateNameForm_Load(object sender, EventArgs e)
+        {
+            GenerateName();
+        }
+
+        private void GenerateButton_Click(object sender, EventArgs e)
+        {
+            GenerateName();
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            AbilityGeneratorForm abilityGenerateorForm = new AbilityGeneratorForm();
+            abilityGenerateorForm.Show();
+            this.Hide();
         }
     }
 }
