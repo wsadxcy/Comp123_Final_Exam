@@ -12,9 +12,16 @@ namespace COMP123_S2016_FinalExam_300709228
 {
     public partial class GenerateNameForm : Form
     {
+        private Random _random;
+
         public GenerateNameForm()
         {
             InitializeComponent();
+        }
+
+        private void GenerateName()
+        {
+
         }
     }
 }
