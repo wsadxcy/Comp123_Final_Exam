@@ -173,6 +173,7 @@
             this.listBox1.Size = new System.Drawing.Size(152, 84);
             this.listBox1.Sorted = true;
             this.listBox1.TabIndex = 2;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // FirstNameLabel
             // 
